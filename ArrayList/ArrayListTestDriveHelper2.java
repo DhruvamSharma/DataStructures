@@ -2,6 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class ArrayListTestDriveHelper2 {
+    
     ArrayList<SongsData> arrayList = new ArrayList<SongsData>();
     
     public void inputData(){
@@ -32,6 +33,7 @@ public class ArrayListTestDriveHelper2 {
 
     /* Comparator Implementation for comparing Title */
     class TitleComparator implements Comparator<SongsData> {
+        
         public int compare(SongsData one, SongsData two) {
             return one.getTitle().compareTo(two.getTitle());
         }
