@@ -1,0 +1,16 @@
+Afghanistan 004 AFG
+Åland Islands 248 ALA
+Albania 008 ALB
+Algeria 012 DZA
+American Samoa 016 ASM
+Andorra 020 AND
+Angola 024 AGO
+Anguilla 660 AIA
+Antarctica 010 ATA
+Antigua and Barbuda 028 ATG
+Argentina 032 ARG
+Armenia 051 ARM
+Aruba 533 ABW
+Australia 036 AUS
+Austria 040 AUT
+Azerbaijan 031 AZE
