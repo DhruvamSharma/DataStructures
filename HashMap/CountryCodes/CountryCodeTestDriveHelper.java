@@ -30,11 +30,7 @@ class CountryCodeTestDriveHelper {
             else {
                 value = key;
                 if (map.containsValue(value)) {
-                    for (Entry<String, String> entry : map.entrySet()) {
-                        if (entry.getValue().equals(value)) {
-                            System.out.println(entry.getKey());
-                        }
-                    }
+                    System.out.println(getKeysByValue2(map,value));
                 }
                 else {
                     System.out.println("No Country Found");
@@ -46,7 +42,23 @@ class CountryCodeTestDriveHelper {
         }
     }
 
-    
+    /*public static <T, E> Set<T> getKeysByValue1(Map<T, E> map, E value) {
+        return map.entrySet()
+                  .stream()
+                  .filter(entry -> Objects.equals(entry.getValue(), value))
+                  .map(Map.Entry::getKey)
+                  .collect(Map.Collectors.toSet());
+    }*/
+
+    public static <T, E> Set<T> getKeysByValue2(Map<T, E> map, E value) {
+        Set<T> keys = new HashSet<T>();
+        for (Map.Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                keys.add(entry.getKey());
+            }
+        }
+        return keys;
+    }
 
     private void addCode(String line) {
         
